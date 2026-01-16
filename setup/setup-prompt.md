@@ -117,11 +117,6 @@ Walk through each category and let them add/remove items.
 
 ### Phase 5: Optional Systems
 
-**Calendar Integration:**
-"Do you use Microsoft 365 for calendar and email? If so, I can help manage your schedule, pull meeting transcripts, and draft emails."
-
-If yes: "The Office 365 MCP server is included in this repo. Check the README for setup instructions."
-
 **Expense Tracking:**
 "Would you like me to help track expenses? If yes, I'll need:
 - Where to save the expense spreadsheet
@@ -134,6 +129,24 @@ If yes: Collect the paths and categories, add to CLAUDE.md.
 "Are there things you need to remember every month? (e.g., download bank statements, send invoices, check subscriptions)"
 
 If yes: Collect the tasks and add to CLAUDE.md.
+
+**Microsoft 365 Integration:**
+"Do you use Microsoft 365 for calendar and email? If so, I can connect to your account to:
+- Manage your calendar and create meetings
+- Read and draft emails
+- Access Teams meeting transcripts
+- Work with OneDrive/SharePoint files
+
+Would you like to set this up now?"
+
+If yes: **Follow the Office 365 Setup Skill** at `skills/office-365-setup/SKILL.md`. This will:
+1. Download the latest MCP server from GitHub
+2. Guide them through Azure app registration
+3. Configure permissions
+4. Create credentials
+5. Authenticate and test the connection
+
+If no or later: "No problem. You can set this up anytime by saying 'Connect Office 365'."
 
 ---
 

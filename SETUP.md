@@ -46,7 +46,7 @@ What Claude can do without asking, what needs approval, and what's off-limits.
 ### Step 4: Optional Systems
 - Expense tracking (if you want it)
 - Recurring monthly tasks
-- Office 365 integration setup
+- Microsoft 365 integration (calendar, email, Teams) - guided setup via skill
 
 ---
 
