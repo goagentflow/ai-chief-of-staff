@@ -74,9 +74,8 @@ Claude will walk you through your day.
 |--------|---------|
 | `prospects/` | Detailed files for each prospect |
 | `work-orders/` | Specific briefs or work packages |
-| `skills/` | Reusable capability packages (tone-of-voice, etc.) |
+| `skills/` | Reusable capability packages (tone-of-voice, office-365-setup, etc.) |
 | `setup/` | Guided setup prompts |
-| `office-365-mcp-server/` | Microsoft 365 integration (optional) |
 
 ---
 
@@ -165,18 +164,26 @@ See `skills/README.md` for details.
 
 ## Microsoft 365 Integration
 
-For calendar, email, Teams and file access:
+For calendar, email, Teams and file access, say:
 
-1. Copy `office-365-mcp-server/` to your home directory
-2. Follow `office-365-mcp-server/SETUP.md`
-3. Add the MCP server to Claude Code settings
+```
+Connect Office 365
+```
 
-This enables:
-- Reading and creating calendar events
-- Searching and reading emails
-- Creating email drafts
-- Fetching Teams meeting transcripts
-- Accessing OneDrive/SharePoint files
+Or during initial setup, choose "Yes" when asked about Microsoft 365 integration.
+
+Claude will guide you through the **office-365-setup skill** which:
+1. Downloads the latest [office-365-mcp-server](https://github.com/hvkshetry/office-365-mcp-server) from GitHub
+2. Walks you through Azure app registration
+3. Configures permissions for the features you need
+4. Helps you authenticate and test the connection
+
+Once connected, you can:
+- Read and create calendar events
+- Search and read emails
+- Create email drafts
+- Fetch Teams meeting transcripts
+- Access OneDrive/SharePoint files
 
 ---
 
@@ -221,11 +228,12 @@ chief-of-staff/
 │   └── TEMPLATE-work-order.md   # Work order template
 ├── skills/
 │   ├── README.md                # How skills work
-│   └── tone-of-voice/
-│       └── SKILL.md             # Your writing style (generated during setup)
-├── setup/
-│   └── setup-prompt.md          # Guided setup flow
-└── office-365-mcp-server/       # Microsoft 365 MCP (optional)
+│   ├── tone-of-voice/
+│   │   └── SKILL.md             # Your writing style (generated during setup)
+│   └── office-365-setup/
+│       └── SKILL.md             # Microsoft 365 integration guide
+└── setup/
+    └── setup-prompt.md          # Guided setup flow
 ```
 
 ---

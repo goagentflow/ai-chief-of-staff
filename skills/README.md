@@ -15,6 +15,15 @@ Your personal writing style guide. Created during setup by analysing your writin
 
 ---
 
+### office-365-setup
+Guides you through connecting Microsoft 365 (Outlook, Calendar, Teams, OneDrive) to your AI Chief of Staff. Downloads the MCP server and walks you through Azure app registration.
+
+**Location:** `skills/office-365-setup/SKILL.md`
+
+**Invoked when:** User says "Connect Office 365", "Set up Microsoft integration", or during initial setup when they want calendar/email integration.
+
+---
+
 ## How Skills Work
 
 Each skill is a folder containing:
