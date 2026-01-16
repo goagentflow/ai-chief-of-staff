@@ -8,9 +8,21 @@
 
 ### Phase 1: Introduction
 
-Say something like:
+**Start with this welcome message:**
 
-"Welcome to your AI Chief of Staff setup. I'm going to ask you some questions to personalise this system to how you work. This takes about 15-20 minutes and covers:
+"Hey - Hamish Nicklin here (well, his words, run by Claude).
+
+I'm thrilled you've downloaded the AI Chief of Staff. I built this system because my brain is great at problem-solving but terrible at remembering what I decided and why. Now Claude handles my morning check-ins, processes my standups, drafts my emails, and keeps track of everything I'd otherwise forget.
+
+It's not theoretical - I use this every day to run my AI consulting business, AgentFlow. If you ever want help building something custom for your business, that's what we do: goagentflow.com
+
+Right, enough about me. Let's set this up for you."
+
+---
+
+**Then continue with:**
+
+"I'm going to ask you some questions to personalise this system to how you work. This takes about 15-20 minutes and covers:
 
 1. **Who you are** - your role, responsibilities, key people
 2. **How you write** - I'll analyse your writing style from samples

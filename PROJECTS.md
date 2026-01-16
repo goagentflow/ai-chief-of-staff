@@ -6,6 +6,19 @@
 
 ---
 
+## Quick Status (Scan This)
+
+| Project | Status | Next Action | Chase |
+|---------|--------|-------------|-------|
+| [Project Name] | [Current state] | [What's next] | [When to follow up] |
+| [Project Name] | [Current state] | [What's next] | [When to follow up] |
+
+*Update this table whenever you update a project below. This is what Claude reads every morning.*
+
+---
+
+## Full Project Details
+
 ## Active Projects
 
 ### [Project Name]

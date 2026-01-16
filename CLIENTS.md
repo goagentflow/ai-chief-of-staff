@@ -6,6 +6,21 @@
 
 ---
 
+## Quick Status (Scan This)
+
+| Client | Status | Next Action |
+|--------|--------|-------------|
+| [Client Name] | [Current state] | [What's next] |
+| [Client Name] | [Current state] | [What's next] |
+
+*For prospects, see PROSPECTS.md*
+
+*Update this table whenever you update a client below. This is what Claude reads every morning.*
+
+---
+
+## Full Client Details
+
 ## Active Clients
 
 ### [Client Name]

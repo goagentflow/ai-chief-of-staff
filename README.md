@@ -57,12 +57,13 @@ Claude will walk you through your day.
 
 | File | Purpose |
 |------|---------|
-| `CLAUDE.md` | Your personalised instruction manual - context, preferences, permissions |
+| `CLAUDE.md` | Stable context - who you are, style guide, permissions (read when drafting) |
+| `CLAUDE-ROUTINES.md` | Daily operations - what Claude reads every morning |
 | `INBOX.md` | Quick capture for unprocessed items |
-| `PROJECTS.md` | Active projects with milestones and next actions |
+| `PROJECTS.md` | Active projects with Quick Status table + full details |
 | `WAITING_FOR.md` | Things blocked on others (who, what, when to chase) |
 | `DECISIONS.md` | Decisions with full reasoning (your external memory for "why") |
-| `CLIENTS.md` | Client contacts and relationship history |
+| `CLIENTS.md` | Client contacts with Quick Status table + relationship history |
 | `PROSPECTS.md` | Sales pipeline summary |
 | `IDEAS.md` | Sparks and thoughts that need to marinate |
 | `IDEAS-ARCHIVE.md` | Ideas that were acted on or dismissed |
@@ -93,7 +94,18 @@ Don't batch updates. Claude updates files immediately when relevant information 
 
 Keep it stable. Update rarely but keep it accurate. This is where Claude learns who you are and how you work.
 
-### 4. The System Evolves
+### 4. Context Window Efficiency
+
+The system is designed to minimize what Claude reads for routine operations:
+
+- **Quick Status tables** at the top of PROJECTS.md and CLIENTS.md - Claude scans these every morning instead of reading full details
+- **CLAUDE-ROUTINES.md** contains just the operational stuff - what Claude needs to run your day
+- **CLAUDE.md** contains stable context (who you are, style guide, permissions) - read only when drafting content or working with specific people
+- **Two-layer architecture** - summary at top, details below. Update both when you update anything.
+
+This reduces morning check-in context from ~60KB to ~15KB (75% reduction).
+
+### 5. The System Evolves
 
 Start simple. Add complexity only when you need it. The best version of this system is the one you actually use.
 
@@ -191,12 +203,13 @@ These save time on repeated tasks and capture institutional knowledge.
 
 ```
 chief-of-staff/
-├── CLAUDE.md                    # Core instructions (personalised during setup)
+├── CLAUDE.md                    # Core instructions - who you are, style guide, permissions
+├── CLAUDE-ROUTINES.md           # Daily operations - what Claude reads every morning
 ├── INBOX.md                     # Quick capture
-├── PROJECTS.md                  # Active projects
+├── PROJECTS.md                  # Active projects (Quick Status table + full details)
 ├── WAITING_FOR.md               # Blocked items
 ├── DECISIONS.md                 # Decisions with reasoning
-├── CLIENTS.md                   # Client reference
+├── CLIENTS.md                   # Client reference (Quick Status table + full details)
 ├── PROSPECTS.md                 # Sales pipeline summary
 ├── IDEAS.md                     # Ideas to marinate
 ├── IDEAS-ARCHIVE.md             # Acted/dismissed ideas
@@ -214,6 +227,38 @@ chief-of-staff/
 │   └── setup-prompt.md          # Guided setup flow
 └── office-365-mcp-server/       # Microsoft 365 MCP (optional)
 ```
+
+---
+
+## About the Creator
+
+**Hi, I'm Hamish Nicklin, CEO of [AgentFlow](https://goagentflow.com).**
+
+I built this system because my brain is excellent at problem-solving and creativity but terrible at remembering what I decided and why. After 25 years in media and advertising (Google, The Guardian, Dentsu), I co-founded AgentFlow to help businesses actually use AI - not just talk about it.
+
+This AI Chief of Staff is what I use every day. It runs my morning check-ins, processes my standup transcripts, drafts my emails, and keeps track of everything I'd otherwise forget. It's not theoretical - it evolved through real daily use.
+
+**Why give it away free?** Because the best way to understand AI isn't reading about it - it's using it. If this system helps you see what's possible, maybe one day you'll want help building something custom for your business. That's what AgentFlow does.
+
+### What If I Don't Have Prospects/Clients?
+
+This template includes files for clients, prospects, and sales pipelines because that's what I need. You don't have to use all of it.
+
+**Use what fits your workflow:**
+- **Freelancer/consultant?** CLIENTS.md and PROJECTS.md are your core
+- **Internal role?** PROJECTS.md and WAITING_FOR.md might be all you need
+- **Solo founder?** IDEAS.md and DECISIONS.md could be most valuable
+- **Creative work?** The tone-of-voice skill might be your killer feature
+
+Delete the files you don't need. Add new ones for what you do need. The system adapts - that's the point.
+
+### Get in Touch
+
+- **Website:** [goagentflow.com](https://goagentflow.com)
+- **LinkedIn:** [Hamish Nicklin](https://www.linkedin.com/in/hamishnicklin/)
+- **Email:** hamish@goagentflow.com
+
+If you build something interesting with this, I'd love to hear about it.
 
 ---
 

@@ -4,6 +4,17 @@
 
 ---
 
+## Quick Reference
+
+**For daily operations (morning check-in, routines, expenses), see `CLAUDE-ROUTINES.md`.**
+
+This file is the full context - who you are, how you work, style guide, permissions. Claude reads it when:
+- Drafting content (need style guide)
+- Working with specific people (need Key People context)
+- Need to check permissions
+
+---
+
 ## Who You Are
 
 [Your name] is [your role] at [your company/organization].
@@ -263,84 +274,13 @@ Your personal writing style guide. Generated during setup from your writing samp
 
 ## Daily Routines
 
-### Morning Check-in (5-10 minutes)
+**See `CLAUDE-ROUTINES.md` for full operational details.**
 
-Start your day by saying: *"Morning check-in"* or *"What's on for today?"*
-
-I'll do the following:
-
-1. **If no EOD check-in yesterday** - Start by asking: "What did you get done yesterday?"
-2. **Pull your calendar** for the day - meetings, calls, deadlines
-3. **Check meeting transcription** - For meetings today, remind to check Record & Transcribe is enabled
-4. **Review INBOX.md** - anything urgent captured yesterday
-5. **Review PROJECTS.md** - surface strategic work and active workstreams
-6. **Check DECISIONS.md** - anything needing a call today?
-7. **Check WAITING_FOR.md** - anything due back from others today
-8. **Review IDEAS.md** - anything captured recently worth revisiting?
-9. **Scan recent emails** - flag anything needing response before first meeting
-10. **Check for expenses** - scan for receipts/expenses to log (if expense tracking enabled)
-11. **Check recurring monthly tasks** - if it's the 15th (or next working day after)
-12. **Check LinkedIn status** - what's scheduled? If nothing, flag it.
-13. **Check active project folders** - scan status files, flag if stale
-14. **Look 10 working days ahead** - any meetings that need prep?
-15. **Ask: "What do you want to focus on today?"**
-
-You decide what actually gets done. I surface everything, then you choose.
-
-### After Agreeing the Day's Plan
-
-1. **Add notes to standup calendar event** - Your daily plan goes into the meeting notes
-2. **Give you a standup-ready summary** - What you're working on, what you need, any blockers
-
-### Standup Transcript Processing
-
-After a daily standup, say: *"Process the standup"*
-
-I'll:
-1. **Fetch the transcript** - via calendar/Teams API
-2. **Run first-pass analysis** - extract what matters
-3. **Return a brief bullet summary** by type:
-   - Content opportunities
-   - New business opportunities
-   - Client status updates
-   - Actions / decisions made
-   - Ideas worth capturing
-   - Things you're now waiting on
-4. **Propose where each item lives** in the system
-5. **Suggest todos** for anything actionable
-6. **We discuss** - you confirm what gets filed, what gets acted on
-
-### Friday Review (added to morning check-in)
-
-Every Friday, in addition to normal routine:
-
-1. **IDEAS.md staleness check** - Any ideas over 2 weeks old to act on or dismiss?
-2. **PROJECTS.md completion check** - Any projects finished that should be archived?
-3. **DECISIONS.md cleanup** - Any old decisions to archive?
-
-### End-of-Day Reconciliation (5-10 minutes)
-
-Before you close down, say: *"End of day"* or *"Let's reconcile"*
-
-I'll help you:
-
-1. **Clear the deck** - What got done today? Mark complete, archive, move on.
-2. **Capture loose threads** - Anything nagging? Quick dump into INBOX.md or IDEAS.md
-3. **Update WAITING_FOR.md** - Did you delegate or ask for something? Log it.
-4. **Flag tomorrow's priorities** - What's the one thing that would make tomorrow a win?
-5. **Check calendar for tomorrow** - Any prep needed tonight?
-
----
-
-## Date-Stamping Rule
-
-**Every time I add something to the system, I date it.** This is how I track age:
-- IDEAS.md entries get date headers
-- WAITING_FOR.md entries get "Sent" and "Follow-up" dates
-- PROJECTS.md gets "Last updated" at the top
-- CLIENTS.md status updates include dates
-
-I know today's date from my system context. I can calculate age and surface anything going stale.
+Quick summary:
+- **Morning check-in**: Say "Morning check-in" - Claude scans Quick Status tables, calendar, waiting-for items
+- **Standup processing**: Say "Process the standup" - Claude extracts and files key items
+- **Friday review**: Added checks for stale ideas and completed projects
+- **End of day**: Say "End of day" - Claude helps clear the deck and prep for tomorrow
 
 ---
 
@@ -374,51 +314,10 @@ Ideas are different from tasks. Tasks get done and cleared. Ideas marinate.
 
 ## Recurring Monthly Tasks
 
-*Configure during setup if needed*
-
-**On the 15th of each month** (or next working day), remind during morning briefing:
-
-| Task | Details |
-|------|---------|
-| [Monthly task 1] | [What needs to happen] |
-| [Monthly task 2] | [Details] |
+*See `CLAUDE-ROUTINES.md` for details. Configure during setup.*
 
 ---
 
 ## Expense Tracking
 
-*Configure during setup if you want expense tracking*
-
-### How It Works
-
-**Your workflow:**
-- Paper receipt? Photo it, email to yourself
-- Email receipt? Forward to yourself
-- No special subject line needed
-
-**My workflow (during morning check-in):**
-1. Scan self-sent emails for expense indicators
-2. Show you what I found: "I found 2 potential expenses - want me to log them?"
-3. If confirmed, extract: date, vendor, amount, VAT, category
-4. Add to expense spreadsheet
-5. Save receipt file to receipts folder
-
-### File Locations
-
-- **Spreadsheet:** `[path to expense spreadsheet]`
-- **Receipts folder:** `[path to receipts folder]` (subfolders by month)
-
-### Categories
-
-- Travel
-- Client Entertainment
-- Software/Subscriptions
-- Office/Equipment
-- Professional Services
-- Other
-
-### Status Values
-
-- **Unclaimed** - Logged but not yet claimed/reimbursed
-- **Claimed** - Submitted for reimbursement
-- **Paid** - Reimbursed or accounted for
+*See `CLAUDE-ROUTINES.md` for details. Configure during setup.*
