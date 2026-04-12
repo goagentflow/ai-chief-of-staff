@@ -294,6 +294,8 @@ Most hours, you hear nothing. That's correct - silence means nothing needs your 
 
 **What you need:** Claude Code's scheduled remote agents (runs in the cloud, no extra machine needed). A Supabase project for securely storing API keys. About an hour to set up.
 
+**Setup guides:** [Email alerts & meeting prep](setup/scheduled-agents-setup.md) (core) | [Content scanning](setup/content-scanning-setup.md) (optional add-on)
+
 ### Structured data alongside narrative context
 
 The markdown files are great for relationship context, strategy notes, and the messy human stuff. But once you've got more than a handful of prospects, you'll want structured data too - pipeline stages, deal values, contact details, follow-up dates. Things you can query and filter.
@@ -309,6 +311,12 @@ The wiki system replaces ad-hoc notes with structured memory pages - people, org
 The difference is subtle but real. Instead of "I told you about this three sessions ago" (which Claude can't remember), it's "I wrote this down in wiki/people/sarah.md and I can read it right now."
 
 **What you need:** A `wiki/` folder with an index. About 10 minutes to set up the structure. The rest builds organically.
+
+**Setup guide:** [wiki-memory-setup.md](setup/wiki-memory-setup.md)
+
+---
+
+All of these are things you can build yourself with the guides in this repo. If you'd rather have someone build them for you, or you want to explore what else is possible for your business - that's what [AgentFlow](https://goagentflow.com) does. We help businesses figure out where AI actually fits and build the things that make a difference. [Get in touch](mailto:hamish@goagentflow.com).
 
 ---
 
