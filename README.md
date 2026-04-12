@@ -18,6 +18,12 @@ The system evolves with use. Start simple, add what you need.
 
 ## Quick Start
 
+**Not sure where to begin?** Start here: **[Getting Started Guide](setup/getting-started.md)**
+
+It asks one question - how technical are you - and takes you down the right path. If you've never opened a terminal, there's a [non-technical guide](setup/non-technical-setup.md) that walks you through everything from scratch using Claude to help.
+
+If you know your way around:
+
 ### 1. Clone This Repo
 
 ```bash
