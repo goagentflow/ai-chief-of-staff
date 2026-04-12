@@ -280,6 +280,8 @@ You can connect your Chief of Staff to Telegram so you can message it on the go 
 
 **What you need:** A spare laptop or old machine running at home with Claude Code in Telegram channel mode. It pulls from the same git repo, so both your desk and your phone talk to the same brain.
 
+**Setup guide:** [setup/telegram-setup.md](setup/telegram-setup.md) - about 15 minutes.
+
 ### Get alerts without asking
 
 Instead of checking in every morning and hoping nothing slipped through, your Chief of Staff can scan your world on a schedule and ping you when something needs attention:
