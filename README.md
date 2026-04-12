@@ -270,6 +270,46 @@ If you build something interesting with this, I'd love to hear about it.
 
 ---
 
+## Where This Can Go
+
+The system above is a solid starting point. Once you've been using it for a few weeks and it knows how you work, there's a lot more you can do with it. These are things I've built into my own version over time - not theoretical, all running daily.
+
+### Talk to it from your phone
+
+You can connect your Chief of Staff to Telegram so you can message it on the go - from a taxi, between meetings, walking the dog. Ask it to check your pipeline, draft a quick email, capture an idea, or prep you for a call. It responds with full context because it reads the same files.
+
+**What you need:** A spare laptop or old machine running at home with Claude Code in Telegram channel mode. It pulls from the same git repo, so both your desk and your phone talk to the same brain.
+
+### Get alerts without asking
+
+Instead of checking in every morning and hoping nothing slipped through, your Chief of Staff can scan your world on a schedule and ping you when something needs attention:
+
+- **Client emails you haven't replied to** - with a suggested response, so you can action it or flag it for later
+- **Meeting prep** - 60 minutes before any meeting, it searches everything it knows about the people you're meeting and sends you a brief. Recent emails, outstanding actions, deal status, even ideas you'd forgotten you'd had about them
+- **AI news that's actually worth your time** - if you follow AI developments, it can scan YouTube channels, newsletters and RSS feeds, apply a proper filter (not just "is this about AI" but "would I sound credible referencing this in a client meeting"), and only ping you when something passes
+
+Most hours, you hear nothing. That's correct - silence means nothing needs your attention.
+
+**What you need:** Claude Code's scheduled remote agents (runs in the cloud, no extra machine needed). A Supabase project for securely storing API keys. About an hour to set up.
+
+### Structured data alongside narrative context
+
+The markdown files are great for relationship context, strategy notes, and the messy human stuff. But once you've got more than a handful of prospects, you'll want structured data too - pipeline stages, deal values, contact details, follow-up dates. Things you can query and filter.
+
+You can connect a database (I use Supabase, but anything works) so the structured facts live there and the narrative stays in your files. Your Chief of Staff reads both and keeps them in sync.
+
+**What you need:** A Supabase project (free tier is fine to start). A schema for your pipeline. The Supabase MCP connector in Claude.
+
+### Memory that compounds
+
+The wiki system replaces ad-hoc notes with structured memory pages - people, organisations, decisions, feedback, reference material. Your Chief of Staff creates and updates these as you work together. Over weeks and months, it builds genuine institutional knowledge about your business.
+
+The difference is subtle but real. Instead of "I told you about this three sessions ago" (which Claude can't remember), it's "I wrote this down in wiki/people/sarah.md and I can read it right now."
+
+**What you need:** A `wiki/` folder with an index. About 10 minutes to set up the structure. The rest builds organically.
+
+---
+
 ## Credits
 
 Built by [AgentFlow](https://goagentflow.com) - AI consulting and implementation.
