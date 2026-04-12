@@ -22,9 +22,23 @@ Think of it like this: browser Claude is the receptionist who helps you set up. 
 
 ---
 
+## Step 0: Find Your Terminal
+
+You'll need this throughout the setup. It's already on your computer - you just need to know where.
+
+**Mac:** Press **Cmd + Space** (opens Spotlight search), type **Terminal**, press **Enter**. A window with a blinking cursor appears. That's it.
+
+**Windows:** Press the **Windows key**, type **PowerShell**, press **Enter**. A blue window with a blinking cursor appears.
+
+This is where you'll paste commands. Don't worry about learning it - you're just going to copy and paste things Claude tells you to type.
+
+---
+
 ## Step 1: Open Claude in Your Browser
 
 Go to [claude.ai](https://claude.ai) and start a new conversation.
+
+**Important:** You need a Claude Pro or Max subscription for this to work. The free tier won't support Claude Code. If you're on the free tier, you'll need to upgrade first ($20/month for Pro).
 
 Paste this prompt:
 
@@ -38,11 +52,14 @@ Here's what I need installed:
 2. Git (needed to download and sync files)
 3. Claude Code (the AI tool that becomes my Chief of Staff)
 
-For each one, please:
+I've already found my terminal:
+- Mac: I opened Terminal via Spotlight (Cmd+Space, typed Terminal)
+- Windows: I opened PowerShell via the Start menu
+
+For each thing to install, please:
 - Tell me exactly where to go and what to click
-- Explain any choices I need to make
+- If I need to type something into the terminal, give me the exact text to copy and paste
 - Tell me what success looks like before moving to the next step
-- If I need to type something into a terminal, tell me how to open the terminal first
 
 Go one step at a time. Don't move to the next step until I confirm the current one worked.
 ```
@@ -69,9 +86,29 @@ After this, you'll have a folder called `chief-of-staff` on your Desktop with al
 
 ---
 
-## Step 3: Start the Guided Setup
+## Step 3: Start Claude Code
 
-Claude will have helped you open Claude Code in the chief-of-staff folder. Now type:
+Open your terminal (the same one from Step 0) and paste these two commands, one at a time:
+
+```
+cd ~/Desktop/chief-of-staff
+```
+
+Press Enter. Then:
+
+```
+claude
+```
+
+Press Enter. Claude Code should start up - you'll see a welcome message and a cursor waiting for your input. This is now your Chief of Staff's brain. Everything you type here goes to Claude, and it can read and edit the files in your chief-of-staff folder.
+
+**If `claude` doesn't work:** Go back to browser Claude and paste: "I typed `claude` in my terminal and got an error: [paste the error]. How do I fix this?"
+
+---
+
+## Step 4: Run the Guided Setup
+
+Now type:
 
 ```
 Let's set up my AI Chief of Staff
@@ -86,7 +123,7 @@ This takes about 15 minutes. Just answer the questions naturally - it's a conver
 
 ---
 
-## Step 4: Start Using It
+## Step 5: Start Using It
 
 Once setup is complete, type:
 

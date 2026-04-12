@@ -130,23 +130,41 @@ If yes: Collect the paths and categories, add to CLAUDE.md.
 
 If yes: Collect the tasks and add to CLAUDE.md.
 
-**Microsoft 365 Integration:**
-"Do you use Microsoft 365 for calendar and email? If so, I can connect to your account to:
-- Manage your calendar and create meetings
-- Read and draft emails
-- Access Teams meeting transcripts
-- Work with OneDrive/SharePoint files
+**Email & Calendar Integration:**
+"What do you use for email and calendar?
 
-Would you like to set this up now?"
+1. **Microsoft 365** (Outlook, Teams, OneDrive)
+2. **Google Workspace** (Gmail, Google Calendar, Google Drive)
+3. **Something else / not sure**
+4. **I'll set this up later**"
 
-If yes: **Follow the Office 365 Setup Skill** at `skills/office-365-setup/SKILL.md`. This will:
-1. Download the latest MCP server from GitHub
-2. Guide them through Azure app registration
-3. Configure permissions
-4. Create credentials
-5. Authenticate and test the connection
+**If Microsoft 365:** "Great. You'll need to connect the Microsoft 365 MCP connector in your Claude settings. Here's how:
 
-If no or later: "No problem. You can set this up anytime by saying 'Connect Office 365'."
+1. Go to [claude.ai/settings](https://claude.ai/settings)
+2. Look for **MCP Connectors** (or **Integrations**)
+3. Find **Microsoft 365** and click Connect
+4. Sign in with your Microsoft account and authorise access
+
+Once connected, I'll be able to read your calendar, search your email, create drafts, and access Teams transcripts. You don't need to install anything else - it's built into Claude."
+
+Save the choice to CLAUDE.md and CLAUDE-ROUTINES.md. Use `mcp__office365__` tools for calendar and email operations. Note in CLAUDE.md: "Email and calendar: Microsoft 365 (Outlook). Use Office 365 MCP tools."
+
+Also note: "Calendar Rules: Always create meetings as Teams meetings (isOnlineMeeting: true). After creating any meeting, remind to enable Record & Transcribe."
+
+**If Google Workspace:** "Great. You'll need to connect two MCP connectors in your Claude settings:
+
+1. Go to [claude.ai/settings](https://claude.ai/settings)
+2. Look for **MCP Connectors** (or **Integrations**)
+3. Find **Gmail** and click Connect - sign in with your Google account
+4. Find **Google Calendar** and click Connect - same Google account
+
+Once connected, I'll be able to read your calendar, search your email, and create drafts. You don't need to install anything else."
+
+Save the choice to CLAUDE.md and CLAUDE-ROUTINES.md. Use Gmail MCP tools for email and Google Calendar MCP tools for calendar operations. Note in CLAUDE.md: "Email and calendar: Google Workspace (Gmail + Google Calendar). Use Gmail and Google Calendar MCP tools."
+
+Also note: "Calendar Rules: Always create meetings with Google Meet link. After creating any meeting, remind to enable recording if needed."
+
+**If something else or later:** "No problem. The system works without email and calendar integration - you just won't get automated email scanning or calendar-based routines. You can set this up anytime by saying 'Connect my email and calendar'."
 
 ---
 

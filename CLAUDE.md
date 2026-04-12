@@ -113,10 +113,19 @@ Your day-to-day responsibilities: [list key responsibilities - e.g., sales, stra
 - [Other boundaries specific to your setup]
 
 ### Calendar Rules
-- **Always create meetings as Teams meetings** (`isOnlineMeeting: true`) - never create calendar-only events without video
-- **After creating any meeting:** Remind to enable Record & Transcribe in meeting options
-- **Exception:** [List any recurring meetings that already have auto-transcribe]
-- **Note:** [Any platform-specific notes - e.g., Teams Premium would allow templates]
+*[Updated during setup based on your email/calendar platform]*
+
+**If Microsoft 365:**
+- Always create meetings as Teams meetings (`isOnlineMeeting: true`)
+- After creating any meeting: remind to enable Record & Transcribe
+- Use Office 365 MCP tools for all calendar and email operations
+
+**If Google Workspace:**
+- Always create meetings with Google Meet link
+- After creating any meeting: remind to enable recording if needed
+- Use Gmail MCP for email, Google Calendar MCP for calendar
+
+**Exception:** [List any recurring meetings that already have auto-transcribe]
 
 ---
 

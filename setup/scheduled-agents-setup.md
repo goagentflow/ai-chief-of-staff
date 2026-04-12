@@ -175,10 +175,14 @@ You should get a row back with `status: 200` and see the message pop up in Teleg
 
 In [claude.ai](https://claude.ai), go to Settings > MCP Connectors and connect:
 
-- **Microsoft 365** - this gives the agent access to your Outlook email and calendar
+**For your email and calendar (choose one):**
+- **Microsoft 365** - if you use Outlook, Teams, OneDrive
+- **Gmail + Google Calendar** - if you use Google Workspace (you'll need to connect both separately)
+
+**For the Telegram edge function:**
 - **Supabase** - this gives the agent access to your edge function via SQL
 
-Follow the prompts for each. You'll need to authorise with your Microsoft account and your Supabase account.
+Follow the prompts for each. You'll need to authorise with your email account and your Supabase account.
 
 ---
 

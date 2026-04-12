@@ -4,6 +4,12 @@
 
 ---
 
+## Before You Start
+
+You need a **Claude Pro or Max subscription** ($20-100/month at [claude.ai](https://claude.ai)). The free tier won't work with Claude Code. If you're not sure which plan you're on, check [claude.ai/settings](https://claude.ai/settings).
+
+---
+
 ## Which Best Describes You?
 
 ### Path A: "I've never opened a terminal on my computer"
